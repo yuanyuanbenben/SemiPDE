@@ -1,5 +1,7 @@
 # Materials for "Deep Semiparametric Partial Differential Equation Models"
-<!-- <a href=""></a> -->
+
+#### ***Note***: Due to size limit of uploaded files, we hereby provide the codes used in the manuscript, while all the output files, plots and dataset are put on the GitHub public repository [https://github.com/yuanyuanbenben/SemiPDE](https://github.com/yuanyuanbenben/SemiPDE). The real datasets are publicly available with links provided in the manuscript. For your ease, we also present how to preprocess them on the above GitHub public repository.
+
 ## Overview
 
 - ### Directory ***simulation*** contains all codes, outputs and plots related to the simulations in *Section 5: Simulation*.
@@ -12,7 +14,7 @@
     - The files ***xxx_optimal.py*** implement the optimization procedures for SemiPDE estimation.
     - The files ***xxx_nonpara.py*** contain functions used for implementing Baseline 2.
     - The files ***xxx_PINN_main.py*** implement Baseline 3.
-    - The files ***xxx_efficient_main.py*** are the main scripts for parameter inference in the SemiPDE framework.
+    - The files ***xxx_variance.py*** are the main scripts for parameter inference in the SemiPDE framework.
     - The files ***PINN_xxx.py*** support the implementation of Baseline 3.
     - The files ***xxx.ipynb*** present selected results for estimation and inference.
     - The files ***plot.py*** and ***plot2.py*** are used to generate plots included in the paper.
@@ -56,7 +58,7 @@
     - For baseline 3, run the shell script ***xxx_pinn.sh***.
 
 - ### Simulation for inference of parameters in the SemiPDE model. 
-    - Users can directly run `./xxx_para_test.sh`. 
+    - Users can directly run `./xxx_para_variance.sh`. 
 
 - ### Simulation for identifiability and robustness of the SemiPDE model.
     - his simulation is similar to the first one, except the true function is set to `0`.
