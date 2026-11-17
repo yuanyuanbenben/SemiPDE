@@ -1,0 +1,17 @@
+{
+    "I1b": {
+    "Interpolation type": "BSPLINE",
+    "BSpline order": 4,
+    "Allow extrapolation": true,
+    "Identify parameters": false,
+    "Identify last point": false
+    },
+    "I2bPOLYCONVEX": {
+    "Interpolation type": "BSPLINE",
+    "BSpline order": 4,
+    "Allow extrapolation": true,
+    "Identify parameters": false,
+    "Identify last point": false
+    }
+}
+  

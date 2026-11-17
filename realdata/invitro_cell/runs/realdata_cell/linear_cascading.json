@@ -1,0 +1,13 @@
+{
+ "cascading": {
+  "train_mse": NaN,
+  "test_mse": 0.009262671263262691,
+  "train_mse_raw": NaN,
+  "test_mse_raw": 9.262671263262692e-09,
+  "test_rmse_raw": 9.624277252481192e-05,
+  "theta": {
+   "D": 0.1539926526059492
+  },
+  "seconds": 87.83666610717773
+ }
+}

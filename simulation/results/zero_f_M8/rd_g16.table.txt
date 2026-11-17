@@ -1,0 +1,41 @@
+
+== estimation and prediction ==
+  method  sigma     M         n    |dtheta|   f rel.err    u approx         R_n
+cascading    0.1     8      1280   9.810e-03   1.046e-02   2.945e-02         nan
+cascading    0.5     8      1280   9.872e-03   2.950e-02   1.447e-01         nan
+ nonpara    0.1     8      1280         nan         nan   4.963e-02         nan
+ nonpara    0.5     8      1280         nan         nan   9.925e-02         nan
+    ours    0.1     8      1280   3.074e-03   5.275e-02   8.937e-03       0.414
+    ours    0.5     8      1280   8.067e-03   1.333e-01   2.866e-02       0.731
+    para    0.1     8      1280   1.370e-03   0.000e+00   1.475e-03         nan
+    para    0.5     8      1280   6.306e-03   0.000e+00   7.952e-03         nan
+    pinn    0.1     8      1280   7.934e-03   8.867e-02   7.895e-02         nan
+    pinn    0.5     8      1280   1.257e-02   1.702e-01   1.114e-01         nan
+
+== size control (R_n = sqrt(J(F)), width m = 64) ==
+  empirical growth exponent q_hat = nan at m=64  (n/a)
+  sieve: n=1280, m=64, R_n=4.835
+    radius      R_n/R_max = 43.48   (VIOLATED), R_max=0.1112
+    omega+eps   1.700e+01   vs n^-A = 7.813e-04
+    tangent     1.359e+01   vs n^-A = 7.813e-04
+    hessian     not covered: the paper states no ReLU bound for H_m
+    sufficient width: C_m = 48, m >= n^C_m = 1.400e+149 (far beyond any attainable network)
+
+== comparison with the baselines ==
+  errors x 1e-2; `--` is not a zero but a quantity the method does not define
+
+  sigma=0.1  M=8  n=1280  reps=50
+    method            u_err    theta_err      f_err
+    SemiPDE          0.894        0.307        5.275
+    Baseline 1       0.147        0.137        0.000
+    Baseline 2       4.963         --           --  
+    Baseline 3       7.895        0.793        8.867
+    cascading        2.945        0.981        1.046
+
+  sigma=0.5  M=8  n=1280  reps=50
+    method            u_err    theta_err      f_err
+    SemiPDE          2.866        0.807       13.334
+    Baseline 1       0.795        0.631        0.000
+    Baseline 2       9.925         --           --  
+    Baseline 3      11.144        1.257       17.018
+    cascading       14.475        0.987        2.950

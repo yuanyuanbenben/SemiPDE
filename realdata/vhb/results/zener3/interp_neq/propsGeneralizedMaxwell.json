@@ -1,0 +1,83 @@
+{
+  "Maxwell element 0": {
+    "Non Eq strain energy function": {
+      "I1b": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      },
+      "I2bPOLYCONVEX": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    },
+    "Non Eq viscosity function": {
+      "I1tau2MINUS3I2tau": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 2,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    }
+  },
+  "Maxwell element 1": {
+    "Non Eq strain energy function": {
+      "I1b": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      },
+      "I2bPOLYCONVEX": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    },
+    "Non Eq viscosity function": {
+      "I1tau2MINUS3I2tau": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 2,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    }
+  },
+  "Maxwell element 2": {
+    "Non Eq strain energy function": {
+      "I1b": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      },
+      "I2bPOLYCONVEX": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 4,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    },
+    "Non Eq viscosity function": {
+      "I1tau2MINUS3I2tau": {
+        "Interpolation type": "BSPLINE",
+        "BSpline order": 2,
+        "Allow extrapolation": true,
+        "Identify parameters": true,
+        "Identify last point": true
+      }
+    }
+  }
+}
